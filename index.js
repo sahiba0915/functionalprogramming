@@ -37,7 +37,19 @@ console.log(res);
 const incrementedByTwo = numbers.map(num => num + 2);
 console.log(incrementedByTwo);
 
-//
+//Q6. Find the sum of odd numbers in an array.
+
+const numArr = [2,5,7,6,99,22];
+const reducer = (p,c) => c%2 == 0 ? p : p+c;
+const sumOfOdd = numArr.reduce(reducer);
+console.log(sumOfOdd);
+
+//Q7. Return an object with the sum of odd numbers and sum of even numbers.
+
+const oddEvenObj = {even: 0, odd: 0};
+const objReducer = (oddEvenObj, num) => num % 2 == 0 ? {...oddEvenObj, even:oddEvenObj.even + num} :{...oddEvenObj, odd:oddEvenObj.odd + num};
+const objReducerResult = numArr.reduce(objReducer, oddEvenObj);
+console.log(objReducerResult);
 
 
 
