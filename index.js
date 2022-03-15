@@ -51,6 +51,19 @@ const objReducer = (oddEvenObj, num) => num % 2 == 0 ? {...oddEvenObj, even:oddE
 const objReducerResult = numArr.reduce(objReducer, oddEvenObj);
 console.log(objReducerResult);
 
+// Currying 
+//Q8. Create a function which takes your name and returns a function which would add that function with any text.
+
+const nameLogger = personName => msg =>console.log(`${personName} says, ${msg}`);
+const sahibaLogger = nameLogger("sahiba");
+
+sahibaLogger("I will complete neog by June'22");
+
+
+
+
+
+
 
 
 
