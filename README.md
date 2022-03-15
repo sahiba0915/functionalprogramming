@@ -3,6 +3,7 @@
  
  ## Topics:
  1. Spread operators.
- 2. Pure Functions
+ 2. Pure Functions.
  3. High Order Functions (HOF).
- 4. Currying
+ 4. Currying.
+ 5. Composition.
